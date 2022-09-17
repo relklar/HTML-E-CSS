@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORMATOS DE TEXTOS</title>
+
+    <style> /* CSS */
+    
+        body{ /* seletor */
+            background-color: white;
+        }
+
+        mark { /* seletor */
+            /*Se eu fizer isso todos os "mark" seram dessa cor*/
+            background-color: limegreen;
+        }
+    </style>
+    
+</head>
+<body>
+
+    <h1>Principais formatações</h1> <!--Ctrl + Shift + p  +  p + Enter-->
+        
+        <h2>Sem descrição</h2> <!-- EX007 -->
+            <p>Eu moro na <address>Rua dos Capixabas, 229 - Botafogo - RJ</address>.</p>
+
+        <h2>Negrito / Destaque</h2>
+            <p>Nesta frase temos um <b>termo em negrito</b> usando a tag B (não semântica).</p>
+            <p>Nesta frase temos um <strong>termo em negrito</strong> usando a tag STRONG (semântica).</p>
+
+        <h2>Itálico / Ênfase</h2>
+            <p>Nesta frase, temos um <i>termo em Itálico</i> usando a tag I (não semântica).</p>
+            <p>Nesta frase, temos um <em>termo em ênfase</em> usando a tag EM (semântica).</p>
+
+        <h2>Texto Marcado</h2> <!-- 'mark' - OLHA O CSS LÁ EM CIMA! -->
+            <p>Podemos criar também <mark>um texto marcado</mark> usando a tag MARK.</p>
+            <p>Podemos criar também <mark style="background-color: limegreen;">um texto marcado</mark> usando a tag MARK.</p>
+            <p>E no outro paragrafo, temos <mark>outro texto marcado</mark> no final.</p>
+
+        <h2>Texto grande e Texto pequeno</h2>
+            <p>estamos criando um <big>texto grande</big> e um <small>texto pequeno</small> nesse paragrafo.</p>
+
+        <h2>Texto excluido ou texto deletado</h2>
+            <p>Podemos marcar <del>um texto como excluido</del> para indicar que ele deve ser lido, mais não considerado.</p>
+
+        <h2>Texto inserido</h2>
+            <p>Podemos marcar <ins>um texto como inserido</ins> para dar uma ênfase e indicar que ele foi adicionado depois.</p>
+            <p>Existe tambem o <U>sublinhado</U> com a tag U.</p>
+
+        <h2>Texto sobrescrito</h2>
+            <p>Para inserir coisas do tipo x<sup>20</sup>+3</p>
+
+        <h2>Texto subscrito</h2>
+            <p>Para inserir coisas do tipo H<sub>2</sub>O</p>
+
+<hr>
+
+    <h1>Outras formatações</h1> <!-- EX008b -->
+
+        <h2>Código-fonte / Pré-formatação</h2>
+            <p>O comando document.getElementById('teste') é escrito em linguagem JavaScript.</p>
+            <p>O comando <code>document.getElementById('teste')</code> é escrito em linguagem JavaScript.</p>
+            <!-- fonte mono espaçada otima para escrever codigos -->
+
+            <pre>
+                <code>
+                    num = int(input('Digite um numero'))
+                    if num % 2 == 0;
+                        print(f'0 numero {num} é par')
+                    else:
+                        print(f'0 numero {num} é impar')
+                    print('Fim do programa')
+                </code>
+            </pre>
+
+<hr>
+
+    <h1>Outras Citações</h1>
+        <h2>Citações simples</h2>
+            <p>Como diria o pai de um amigo: <q>o computador é um burro muito rapido</q>.</p>
+
+        <h2>Citações completas</h2>
+            <p>Segundo Jeff Hoble, no seu livro HTML para leigos:</p>
+            <blockquote cite="link do dono da frase a baixo!">
+                A diferença entre elementos inline e um bloco de texto é importante. Os elementos HTMl neste capítulo descrevem os blocos de texto. 
+            </blockquote>
+
+        <h2>Abreviações</h2> <!-- COMANDO ÚTIL -->
+            <p>Estou estudando HTML e CSS. Estou adorando!</p>
+            <p>Estou estudando <abbr title="HyperText Markup Language">HTML</abbr> e <abbr title="Cascading Style Sheets">CSS</abbr>. Estou adorando!</p> <!-- Quando passa o rato em cima, apareçe o nome! -->
+
+        <h2>Texto invertido</h2>
+            <p><bdo dir="rtl">Estou criando um texto invertido</bdo></p>
+</body>
+</html>
