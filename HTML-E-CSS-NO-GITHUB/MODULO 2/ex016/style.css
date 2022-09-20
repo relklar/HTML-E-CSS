@@ -1,0 +1,32 @@
+@charset "UTF-8";
+
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    /*  height: 100%;  */
+}
+
+body {
+    background-image: linear-gradient( to right, blue, red);
+}
+
+main {
+    background-color: white;
+    border-radius: 20px; /* Esse comando arredonda as bordas */
+    box-shadow: 10px 10px 10px blue; /* Esse comando faz uma sombra */ /* Andando pro lado; andando pra baixo; espalhamento; cor */
+    width: 600px;
+    padding: 10px;
+    margin: auto; /* Esse aqui faz com que tudo fique no meio */
+}
+
+h1 {
+    color: rgb(130, 26, 228);
+    text-align: center;
+    box-shadow: 1px 1px 2px rgb(98, 21, 170);;
+}
+
+h2 {
+    color: brown;
+}
+p {
+    text-align: justify;
+}

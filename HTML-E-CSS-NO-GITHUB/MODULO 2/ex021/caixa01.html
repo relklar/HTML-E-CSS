@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo de Caixas</title>
+
+    <style>
+        h1 { /* box-level */
+
+            /* display: inline; */
+            background-color: rgb(92, 161, 92);
+
+            height: 40px;
+            width: 400px;
+
+/* -------------------------------------------------------------------------------------------- */
+
+            border-width: 10px; /* Tamanho da Borda */
+            border-style: solid; /* Estilo Da Borda = Solida */
+            border-color: darkblue; /* Cor Da Borda */
+            
+            /* Simplificando o codigo a cima */
+            border: 10px solid darkblue;
+
+/* -------------------------------------------------------------------------------------------- */
+
+            /* PADDING DE N°PX ENTRE A BORDA E O CONTEUDO */
+
+            padding-top: 10px; /* TOPO */
+            padding-right: 10px; /* DIREITA */
+            padding-bottom: 10px; /* EM BAIXO */
+            padding-left: 10px; /* ESQUERDA */
+
+            /*  Simplificando o codigo a cima, seguindo uma "SEQUENCIA" */
+            /*  padding: TOPO + DIREITA + EM BAIXO + ESQUERDA;          */
+            padding: 10px 10px 10px 10px;
+
+            /* Se todos forem iguais Voce pode usar: */ padding: 10px; /* Serve para todos
+
+/* -------------------------------------------------------------------------------------------- */
+
+            /* MARGIN DE N°PX ENTRE A BORDA E O CONTEUDO */
+
+            margin: auto; /* Faz com que a caixa fique no meio, porém não pode editar */
+
+            margin-top: 20px; /* TOPO */
+            margin-right: 20px; /* DIREITA */
+            margin-bottom: 40px; /* bAIXO */
+            margin-left: 20px; /* ESQUERDA */
+            
+            /*  Simplificando o codigo a cima */
+            margin: 20px 20px 40px 20px;
+
+            /* Centralizar */
+            margin: 20px auto 40px auto;
+
+/* -------------------------------------------------------------------------------------------- */
+
+            outline-width: 5px;
+            outline-style: dashed;
+            outline-color: salmon;
+
+            /* Simplificando o codigo a cima */
+            outline: 5px dashed salmon;
+        }
+
+/* -------------------------------------------------------------------------------------------- */
+
+        a { /*inline-level*/
+            /* display: block; */
+
+            border-width: 10px; /* Tamanho da Borda */
+            border-style: solid; /* Borda Solida
+            border-style: dashed; = Borda Pontilhada Quadrada
+            border-style: dotted; = Borda Pontilhada Redonda
+            border-style: double; = Borda Linha Dupla
+            border-style: groove; = Margem Meio 3D */
+            border-color: red; /* Cor Da Borda */
+
+            /* PADDING DE 10PX ENTRE A BORDA E O CONTEUDO */
+            padding-top: 10px; /* TOPO */
+            padding-right: 10px; /* DIREITA */
+            padding-bottom: 10px; /* bAIXO */
+            padding-left: 10px; /* ESQUERDA */
+        }
+
+
+    </style>
+</head>
+<body>
+    <h1>Exemplo de caixa box-level</h1>
+    <p>Parágrafos tambem sao exemplos de box-level, mas os <a href="#">links sao exemplos de caixas inline-level</a>. Vamos ver como tudo isso funciona.</p>
+</body>
+</html>

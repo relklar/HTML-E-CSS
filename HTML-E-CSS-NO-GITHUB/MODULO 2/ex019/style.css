@@ -1,0 +1,51 @@
+@charset "UTF-8";
+
+/*
+    Tudo que em HTML é id = Em CSS é # (Usa so um )
+    Tudo que em HTML é class = Em CSS é . (usa varios )
+*/
+
+body { /* Normal */
+    background-color: #d6fde9;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 { /* Normal */
+    color: #1e402f;
+}
+
+h1#principal { /* Usando id */
+    text-align: center;
+    background-color: #3c805e;
+    color: white;
+}
+
+h2 { /* Normal */
+    color: #3c805e;
+}
+
+.texte { /* Usando Class */  /* Marcar dentro de um texto */
+    color: red;
+}
+
+ 
+.basico { /* Usando Class */
+    color: #3c805e;
+}
+
+.intermediario { /* Usando Class */
+    color: #80763c;
+}
+
+.avancado { /* Usando Class */
+    color: #803c3c;
+}
+
+
+.destaque { /* Usando Class */
+    background-color: rgba(197, 197, 104, 0.527);
+}
+
+.out-destaque {
+    color: blue;
+}
