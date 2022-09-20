@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML5 - Audios</title>
+</head>
+<body>
+    <h1>Reproduzindo Audios</h1>
+    <p>Vamos aprender a reproduzir audios em HTML5.</p>
+    <audio src="Midias/Dewey, Cheedham, and Howe (Sting) - John Deley and the 41 Players.mp3" controls autoplay></audio>
+
+    <h1>Reproduzindo Audios</h1>
+    <p>Vamos aprender areproduzir audios em HTML5.</p>
+    <audio preload="auto" autoplay controls loop> <!--Loop quando ele chega no final do audio ele começa denovo-->
+        <source src="Midias/Dewey, Cheedham, and Howe (Sting) - John Deley and the 41 Players.mp3" type="audio/mpeg">
+        <source src="Midias/Dewey, Cheedham, and Howe (Sting) - John Deley and the 41 Players.ogg" type="audio/ogg">
+        <source src="Midias/Dewey, Cheedham, and Howe (Sting) - John Deley and the 41 Players.wav" type="audio/wav">
+        
+        <p>Infelismente seu navegador nao consegue baixar audio. <a href="Midias/Dewey, Cheedham, and Howe (Sting) - John Deley and the 41 Players.mp3">Clique aqui para baixar o arquivo MP3.</a></p>
+    </audio>
+</body>
+</html>
