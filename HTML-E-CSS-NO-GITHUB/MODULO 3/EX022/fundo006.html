@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body {
+            height: 100vh;
+
+            background-color: black;
+            background-image: url("IMAGENS/wallpaper002.jpg");
+            background-position: center center;
+            background-repeat: no-repeat;
+
+            background-size: contain; /* Esse comando faz com que a imagem de fundo fique em 100% na tela, mas isso faz com que ela se achate em tela de diferentes dimenções */
+            background-size: cover; /* Esse comando faz com que a imagem de fundo fique em 100% na tela sem se achatar, mas isso faz com que ela seja cortada em tela de diferentes dimenções */
+
+            background-attachment: scroll; /* Esse comando faz com que a imagem de fundo role junto com a tela */
+            background-attachment: fixed; /* Esse comando faz com que a imagem de fundo fique fixa */
+        }
+        
+        body {
+            height: 100vh;
+            /* shorthand - background: color > image > position > repeat > [size] > attachment
+            */
+            /* OBS: O elemento size nao funciona, não sei o porque! */
+            background: black url("IMAGENS/wallpaper002.jpg") center center no-repeat fixed;
+            /* OBS: Então como o size nao funciona, a gente adiciona ele normalmente! */
+            background-size: cover;
+        }
+
+        main {
+            background-color: white;
+            max-width: 700px;
+            padding: 10px;
+            margin: auto;
+            border: 1px solid darkblue;
+            border-radius: 15px;
+
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Teste de imagem de fundo</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa mollitia ab voluptatem suscipit pariatur porro placeat, quaerat quis perspiciatis rem vel, ut voluptatibus atque sed excepturi? Ipsum dolor voluptas veniam. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eligendi corporis dolorem expedita iure reprehenderit accusantium est molestiae voluptates! Fugiat sed sunt minus omnis dolorem qui veritatis cupiditate sit similique corrupti! Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae nemo eligendi quas voluptatem placeat, temporibus earum incidunt labore porro iste voluptas. Neque modi facere, similique amet odit doloremque saepe qui?</p>
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa mollitia ab voluptatem suscipit pariatur porro placeat, quaerat quis perspiciatis rem vel, ut voluptatibus atque sed excepturi? Ipsum dolor voluptas veniam. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eligendi corporis dolorem expedita iure reprehenderit accusantium est molestiae voluptates! Fugiat sed sunt minus omnis dolorem qui veritatis cupiditate sit similique corrupti! Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae nemo eligendi quas voluptatem placeat, temporibus earum incidunt labore porro iste voluptas. Neque modi facere, similique amet odit doloremque saepe qui?</p>
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa mollitia ab voluptatem suscipit pariatur porro placeat, quaerat quis perspiciatis rem vel, ut voluptatibus atque sed excepturi? Ipsum dolor voluptas veniam. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eligendi corporis dolorem expedita iure reprehenderit accusantium est molestiae voluptates! Fugiat sed sunt minus omnis dolorem qui veritatis cupiditate sit similique corrupti! Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae nemo eligendi quas voluptatem placeat, temporibus earum incidunt labore porro iste voluptas. Neque modi facere, similique amet odit doloremque saepe qui?</p>
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa mollitia ab voluptatem suscipit pariatur porro placeat, quaerat quis perspiciatis rem vel, ut voluptatibus atque sed excepturi? Ipsum dolor voluptas veniam. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eligendi corporis dolorem expedita iure reprehenderit accusantium est molestiae voluptates! Fugiat sed sunt minus omnis dolorem qui veritatis cupiditate sit similique corrupti! Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae nemo eligendi quas voluptatem placeat, temporibus earum incidunt labore porro iste voluptas. Neque modi facere, similique amet odit doloremque saepe qui?</p>
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa mollitia ab voluptatem suscipit pariatur porro placeat, quaerat quis perspiciatis rem vel, ut voluptatibus atque sed excepturi? Ipsum dolor voluptas veniam. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eligendi corporis dolorem expedita iure reprehenderit accusantium est molestiae voluptates! Fugiat sed sunt minus omnis dolorem qui veritatis cupiditate sit similique corrupti! Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae nemo eligendi quas voluptatem placeat, temporibus earum incidunt labore porro iste voluptas. Neque modi facere, similique amet odit doloremque saepe qui?</p>
+    </main>
+</body>
+</html>
