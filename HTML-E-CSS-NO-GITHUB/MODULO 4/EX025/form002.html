@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+<body>
+    <h1>Teste de Formulario</h1>
+    <form action="cadastro.php" method="post" autocomplete="on">
+        <!-- action="cadastro.php" -->
+        <!-- method= "get" ou "post" -->
+        <!-- autocomplete= "on" ou "off" Esse comando -->
+
+        <p>
+            <label for="i-usu">Usuario</label>
+            <input type="text" name="usu" id="i-usu" required minlength="6" maxlength="28" placeholder="Nome do usuario..." autocomplete="username">
+            <!-- required é obrigatorio o preencimento do campo -->
+            <!-- minlength="6" é a quantidade minima de letras -->
+            <!-- maxlength="28" é a quantidade maxima de letras -->
+            <!-- placeholder="Nome do usuario..." Esse comando -->
+
+            <!-- autocomplete="username" -->
+
+            <!--- size="10" Tamanho da caixa, quantas letras ele ira mostrar por vez-->
+        </p>
+
+
+        <p>
+            <label for="i-sen">Senha</label>
+            <input type="password" name="usu" id="i-sen" required minlength="8" maxlength="48" placeholder="Digite sua senha..." autocomplete="current-password">
+            <!-- required é obrigatorio o preencimento do campo -->
+            <!-- minlength="8" é a quantidade minima de letras -->
+            <!-- maxlength="48" é a quantidade maxima de letras -->
+            <!-- placeholder="Digite sua senha..." Esse comando -->
+
+            <!-- autocomplete="current-password" -->
+
+            <!--- size="10" Tamanho da caixa, quantas letras ele ira mostrar por vez-->
+        </p>
+        
+
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>
